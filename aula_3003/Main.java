@@ -1,21 +1,19 @@
-class Animal {
-    String nome;   
+class Carro {
+    String nome;
+    String modelo;
+
+    public Carro(){};
+
+    public Carro(String nome, String modelo) {
+        this.nome = nome;
+        this.modelo = modelo;
+    }
 }
 
-class Carrocho extends Animal {
-    String raca;
-    
-}
-class Main{
-    public static void main (String[] args){
+public class Main {
+    public static void main(String[] args) {
+        Carro car = new Carro("bmw", "bmw");
+        System.out.println(car.nome, car.modelo);
+    }
 
-        Cachorro cachorro = new Cachorro();
-
-        cachorro.nome = "Morgana";
-        cachorro.raca = "rottweiler";
-
-    System.out.println("Nome: ", + cachorro.nome );
-    System.out.println("sua raça é: ", + cachorro.raca);
-
-}
 }
